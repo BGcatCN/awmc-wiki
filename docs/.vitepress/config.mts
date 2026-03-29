@@ -66,7 +66,12 @@ export default defineConfig({
               text: '💻 开发者中心',
               items: [
                 { text: '开发概览', link: '/dev/' },
-                { text: 'API 参考', link: '/dev/api' }
+              ]
+            },
+            {
+              text: '📊 舞萌状态',
+              items: [
+                {text: '舞萌状态API', link: '/dev/status-api'}
               ]
             }
           ]

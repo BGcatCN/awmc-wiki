@@ -14,8 +14,8 @@ hero:
       text: 快速开始
       link: /guide/getting-started
     - theme: alt
-      text: 了解 AWMC TEAM
-      link: /guide/introduction
+      text: 使用API
+      link: /dev/index
 features:
   - icon: 🛠️
     title: 功能强大
