@@ -1,7 +1,7 @@
 # AWMC BOT 基础教程
 
 ::: info
-如果您有详细教程，欢迎通过右上角的GitHub编辑 递交Pull Request！
+如果您有详细教程，欢迎通过文章底部的的 GitHub编辑 递交Pull Request！
 :::
 
 ::: tip
