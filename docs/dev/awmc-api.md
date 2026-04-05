@@ -13,6 +13,9 @@ apiBaseUrl: https://api.awmc.cc
 - 浏览器登录后的 JWT，或在网站内生成的 **`gw_` 长期令牌**（勿泄露）。
 :::
 
+::: tip 购买Token
+额度购买: https://store.awmc.cc/item?id=98
+:::
 
 ## 1. 服务地址与路径
 
