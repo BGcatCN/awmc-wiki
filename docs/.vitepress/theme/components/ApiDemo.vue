@@ -45,7 +45,10 @@ const currentApi = computed(() => {
 
   return {
     title: props.title || base.title || '未命名接口',
-    method: props.method || base.method || 'GET',
+    // 当使用 options 时，优先使用选项中的 method，避免 props.method 默认值覆盖
+    method: (props.options && props.options.length > 0)
+      ? (base.method || props.method || 'GET')
+      : (props.method || base.method || 'GET'),
     path: props.path || base.path || '/',
     baseUrl: finalBaseUrl,
     description: props.description || base.description || '',
