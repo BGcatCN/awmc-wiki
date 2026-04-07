@@ -31,6 +31,19 @@ export default defineConfig({
       'script',
       {},
       'LA.init({id:"3PY9HZ7QuBatWvlO",ck:"3PY9HZ7QuBatWvlO",autoTrack:true,hashMode:true,screenRecord:true})'
+    ],
+    // 51.LA 性能监控 (LingQue)
+    [
+      'script',
+      {
+        src: 'https://sdk.51.la/perf/js-sdk-perf.min.js',
+        crossorigin: 'anonymous'
+      }
+    ],
+    [
+      'script',
+      {},
+      'new LingQue.Monitor().init({id:"3PY9rkhX3BdbXUTQ",sendSpaPv:true});'
     ]
   ],
 
