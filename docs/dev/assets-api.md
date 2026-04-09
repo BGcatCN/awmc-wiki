@@ -25,7 +25,7 @@ AWMC 提供了一系列静态资源接口，方便开发者直接获取游戏相
       path: '/covers/:id',
       description: '获取指定 ID 的曲绘图片（需带上 .png 后缀）。',
       params: [
-        { name: 'id', type: 'string', required: '必填', desc: '曲绘 ID (含后缀)', value: '1.png' }
+        { name: 'id', type: 'string', required: '必填', desc: '曲绘 ID (含后缀)', value: '0.png' }
       ]
     }
   ]"
