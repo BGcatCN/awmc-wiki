@@ -109,6 +109,12 @@ export default defineConfig({
                 {text: 'AWMC 功能 API', link: '/dev/awmc-api'},
                 {text: 'Assets 静态资源 API', link: '/dev/assets-api'}
               ]
+            },
+            {
+              text: '🎵 谱面预览',
+              items: [
+                { text: '谱面预览', link: '/dev/chart-preview' }
+              ]
             }
           ]
         }

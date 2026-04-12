@@ -28,6 +28,11 @@ const props = defineProps({
   options: {
     type: Array,
     default: () => []
+  },
+  /** 为 true 时：不 fetch、不展示响应区，仅在新标签页打开完整 URL（如前端预览页） */
+  openInNewTab: {
+    type: Boolean,
+    default: false
   }
 })
 
@@ -110,6 +115,12 @@ const getFullUrl = () => {
 }
 
 const runRequest = async () => {
+  if (props.openInNewTab) {
+    const url = getFullUrl()
+    window.open(url, '_blank', 'noopener,noreferrer')
+    return
+  }
+
   isLoading.value = true
   executionResult.value = null
   
@@ -211,8 +222,14 @@ const formatMethod = (method) => {
         <div class="url-box">
           <code class="full-url">{{ getFullUrl() }}</code>
           <div class="url-actions">
-            <button class="run-btn" @click.stop="runRequest" :disabled="isLoading">
-              {{ isLoading ? '运行中...' : '运行' }}
+            <button class="run-btn" @click.stop="runRequest" :disabled="isLoading && !openInNewTab">
+              {{
+                openInNewTab
+                  ? '在新标签页打开'
+                  : isLoading
+                    ? '运行中...'
+                    : '运行'
+              }}
             </button>
             <button class="copy-btn" @click.stop="copyUrl">
               {{ copySuccess ? '已复制' : '复制' }}
@@ -250,32 +267,34 @@ const formatMethod = (method) => {
           </tbody>
         </table>
 
-        <!-- 响应预览 -->
-        <div class="section-title">
-          {{ currentApi.isImage ? '响应预览 (图片)' : '响应示例 (JSON)' }}
-        </div>
-        <div v-if="executionResult" class="response-header">
-          实际响应结果：
-          <button class="clear-btn" @click="executionResult = null">清除</button>
-        </div>
-        
-        <!-- 图片预览模式 -->
-        <div v-if="currentApi.isImage" class="image-preview-box" :class="{ 'loading': isImageLoading }">
-          <div v-if="isImageLoading" class="image-loader">正在加载图片...</div>
-          <img 
-            :src="getFullUrl()" 
-            alt="Preview"
-            class="preview-img"
-            :style="{ opacity: isImageLoading ? 0.3 : 1 }"
-            @load="isImageLoading = false"
-            @error="isImageLoading = false; executionResult = { error: '图片加载失败，请检查 ID 是否正确' }"
-          />
-        </div>
+        <template v-if="!openInNewTab">
+          <!-- 响应预览 -->
+          <div class="section-title">
+            {{ currentApi.isImage ? '响应预览 (图片)' : '响应示例 (JSON)' }}
+          </div>
+          <div v-if="executionResult" class="response-header">
+            实际响应结果：
+            <button class="clear-btn" @click="executionResult = null">清除</button>
+          </div>
+          
+          <!-- 图片预览模式 -->
+          <div v-if="currentApi.isImage" class="image-preview-box" :class="{ 'loading': isImageLoading }">
+            <div v-if="isImageLoading" class="image-loader">正在加载图片...</div>
+            <img 
+              :src="getFullUrl()" 
+              alt="Preview"
+              class="preview-img"
+              :style="{ opacity: isImageLoading ? 0.3 : 1 }"
+              @load="isImageLoading = false"
+              @error="isImageLoading = false; executionResult = { error: '图片加载失败，请检查 ID 是否正确' }"
+            />
+          </div>
 
-        <!-- JSON 预览模式 -->
-        <div v-else class="response-box" :class="{ 'execution-res': executionResult }">
-          <pre><code>{{ JSON.stringify(executionResult || currentApi.response, null, 2) }}</code></pre>
-        </div>
+          <!-- JSON 预览模式 -->
+          <div v-else class="response-box" :class="{ 'execution-res': executionResult }">
+            <pre><code>{{ JSON.stringify(executionResult || currentApi.response, null, 2) }}</code></pre>
+          </div>
+        </template>
       </div>
     </transition>
   </div>

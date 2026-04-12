@@ -3,6 +3,7 @@ apiBaseUrl: https://status.awmc.cc
 statBaseUrl: https://stat.awmc.cc
 awmcApiBaseUrl: https://api.awmc.cc
 assetsApiBaseUrl: https://assets.awmc.cc
+chartPreviewBaseUrl: https://v.awmc.cc
 ---
 
 # 💻 开发者中心
@@ -44,6 +45,15 @@ assetsApiBaseUrl: https://assets.awmc.cc
 - **资源类型**：`.png` 格式的曲绘图。
 - **详细文档**：[点击查看 Assets 静态资源 API 详情](/dev/assets-api)
 
+## 🎵 谱面预览 (入口: `{{ $frontmatter.chartPreviewBaseUrl }}`)
+
+::: info 💡 浏览器预览
+在网页中查看舞萌谱面；参数与落雪乐曲 ID、谱面类型及难度档位对应，适合开发与分享链接。
+:::
+
+- **鉴权方式**：<Badge type="tip" text="无需鉴权" /> (公开访问)
+- **详细文档**：[点击查看谱面预览说明](/dev/chart-preview)
+
 ## 🚀 快速上手
 
 你可以通过以下链接快速访问不同模块的开发文档：
@@ -51,6 +61,7 @@ assetsApiBaseUrl: https://assets.awmc.cc
 - [**舞萌状态 API**](/dev/status-api) - 获取服务实时在线状态、心跳记录及公告。
 - [**AWMC 公共 API**](/dev/awmc-api) - 二维码识别、成绩上传及业务功能调用。
 - [**Assets 静态资源 API**](/dev/assets-api) - 曲绘、资源图库等静态文件获取。
+- [**谱面预览**](/dev/chart-preview) - 浏览器内谱面预览与 Query 参数说明。
 - [**更多功能**] - 正在开发中，敬请期待...
 
 ::: tip 建议
