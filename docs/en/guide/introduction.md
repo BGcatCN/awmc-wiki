@@ -2,9 +2,9 @@
 
 ## Who we are
 
-The first establishment of AWMC TEAM was actually done by Milk alone. By a serendipity chance, he registered 'awmc.cc'.
+The first establishment of AWMC TEAM was actually done by Milk alone. By a serendipity chance, he registered 'awmc.cc' (now primarily served at awmc.team).
 
-At that time,he was inexperienced but had a basic understanding of server, and just tried to create awmc.cc forum.
+At that time,he was inexperienced but had a basic understanding of server, and just tried to create the awmc.cc forum.
 
 Later, he developed services such as AWMC Status, AWMC Bot.
 

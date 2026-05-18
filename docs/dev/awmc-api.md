@@ -1,12 +1,12 @@
 ---
-apiBaseUrl: https://api.awmc.cc
+apiBaseUrl: https://api.awmc.team
 ---
 # 🔌 AWMC 网关公共 API（计费说明）
 
 面向**使用者**：如何调用开放接口，以及 **Token 何时会扣费**。本文不讨论内部实现。
 
 ::: tip 平台地址
-平台地址：https://api.awmc.cc
+平台地址：https://api.awmc.team
 
 需要AWMC通行证登陆～
 :::
@@ -20,7 +20,7 @@ apiBaseUrl: https://api.awmc.cc
 :::
 
 ::: tip 购买Token
-额度购买: https://store.awmc.cc/item?id=98
+额度购买: https://store.awmc.team/item?id=98
 :::
 
 ## 1. 服务地址与路径
@@ -186,7 +186,7 @@ apiBaseUrl: https://api.awmc.cc
 ## 4. 公开 JSON 目录
 
 ```http
-GET https://api.awmc.cc/api/docs
+GET https://api.awmc.team/api/docs
 ```
 
 返回各路径、方法、**消耗** 与简要说明，便于脚本读取。

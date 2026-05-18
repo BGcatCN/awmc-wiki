@@ -46,7 +46,7 @@ const currentApi = computed(() => {
     base = props.options[activeOptionIndex.value]
   }
 
-  const finalBaseUrl = props.baseUrl || base.baseUrl || frontmatter.value.apiBaseUrl || 'https://status.awmc.cc'
+  const finalBaseUrl = props.baseUrl || base.baseUrl || frontmatter.value.apiBaseUrl || 'https://status.awmc.team'
 
   return {
     title: props.title || base.title || '未命名接口',
@@ -204,7 +204,7 @@ const formatMethod = (method) => {
         </div>
 
         <!-- 鉴权部分 (仅针对 awmc-api 场景) -->
-        <div v-if="currentApi.baseUrl.includes('api.awmc.cc')" class="auth-section">
+        <div v-if="currentApi.baseUrl.includes('api.awmc.team')" class="auth-section">
           <div class="section-title">鉴权设置 (Authorization)</div>
           <div class="auth-box">
             <span class="auth-prefix">Bearer</span>
