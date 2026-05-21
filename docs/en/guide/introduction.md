@@ -1,27 +1,15 @@
-# About: AWMC TEAM
+# What is AWMC Team
 
-## Who we are
+## Who We Are
 
-The first establishment of AWMC TEAM was actually done by Milk alone. By a serendipity chance, he registered the `awmc.cc` domain.
+AWMC TEAM was initially created by Milk alone. At the time, he was inexperienced but had a basic understanding of servers. By a stroke of luck, he registered the domain `awmc.cc`.
 
-At that time,he was inexperienced but had a basic understanding of server, and just tried to create the awmc.cc forum.
+At first, it was just an attempt to build the AWMC Forum. Later, services like AWMC Status and AWMC Bot were developed.
 
-Later, he developed services such as AWMC Status, AWMC Bot.
+## What We Do
 
-## What we do
+We are developing maimai-related projects, including maimai server status monitoring and a maimai bot. We strive to serve players at the lowest possible cost.
 
-We are developing projects of maimai DX! (maimai Server Status, maimai QQ Group BOT, etc.) We are finding the lowest-cost way for supporting players.
+## About Milk
 
-## about:milk
-
-I'm a maimai DX newbie, hope the pros can carry me! Give me more advice if I mess up in any way. Yoroshiku `>w<`
-
-## about:BGcat
-
-Hiiiii BGca-there, the translator of these texts!
-
-This self-introduction is English version only xD(because im just a mascot of team lol)
-
-Hope whoever is reading this(yes,you!) has a nice day!
-
-Hope somebody can find this place...
+A maimai newbie here, hoping the pros can carry me! Please give me advice if I mess up in any way. `>w<`

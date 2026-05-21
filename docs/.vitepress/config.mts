@@ -103,43 +103,77 @@ export default defineConfig({
         }
       }
     },
-    // en: {
-    //   label: 'English',
-    //   lang: 'en-US',
-    //   link: '/en/',
-    //   themeConfig: {
-    //     lastUpdatedText: 'Last Updated',
-    //     outline: {
-    //       level: [2, 6],
-    //       label: 'On this page'
-    //     },
-    //     nav: [
-    //       { text: 'Home', link: '/en/' },
-    //       { text: 'Guide', link: '/en/guide/introduction' },
-    //       { text: 'Dev', link: '/en/dev/' }
-    //     ],
-    //     sidebar: {
-    //       '/en/guide/': [
-    //         {
-    //           text: '📖 Guide',
-    //           items: [
-    //             { text: 'What is AWMC?', link: '/en/guide/introduction' },
-    //             { text: 'Getting Started', link: '/en/guide/getting-started' }
-    //           ]
-    //         }
-    //       ],
-    //       '/en/dev/': [
-    //         {
-    //           text: '💻 Developers',
-    //           items: [
-    //             { text: 'Dev Overview', link: '/en/dev/' },
-    //             { text: 'API Reference', link: '/en/dev/api' }
-    //           ]
-    //         }
-    //       ]
-    //     }
-    //   }
-    // }
+    en: {
+      label: 'English',
+      lang: 'en-US',
+      link: '/en/',
+      themeConfig: {
+        lastUpdatedText: 'Last Updated',
+        outline: {
+          level: [2, 6],
+          label: 'On this page'
+        },
+        editLink: {
+          pattern: 'https://github.com/Michaelwucoc/awmc-wiki/edit/main/docs/:path',
+          text: 'Edit this page on GitHub'
+        },
+        nav: [
+          { text: 'Home', link: '/en/' },
+          { text: 'Guide', link: '/en/guide/introduction' },
+          { text: 'Dev', link: '/en/dev/' }
+        ],
+        sidebar: {
+          '/en/guide/': [
+            {
+              text: '📖 Guide',
+              items: [
+                { text: 'What is AWMC?', link: '/en/guide/introduction' },
+                { text: 'Getting Started', link: '/en/guide/getting-started' },
+                { text: 'Changelog', link: '/en/guide/update' }
+              ]
+            },
+            {
+              text: '🤖 AWMC BOT',
+              items: [
+                { text: 'Terms of Service & Privacy', link: '/en/guide/bot/terms' },
+                { text: 'Basic Tutorial', link: '/en/guide/bot/intro' },
+                { text: 'Advanced Tutorial', link: '/en/guide/bot/advanced' },
+                { text: 'Terminology', link: '/en/guide/bot/explain' },
+                { text: 'Commands', link: '/en/guide/bot/commands' },
+                { text: 'Authorization', link: '/en/guide/bot/verify' }
+              ]
+            }
+          ],
+          '/en/dev/': [
+            {
+              text: '💻 Developer Center',
+              items: [
+                { text: 'Dev Overview', link: '/en/dev/' }
+              ]
+            },
+            {
+              text: '📊 Status',
+              items: [
+                { text: 'Status API', link: '/en/dev/status-api' }
+              ]
+            },
+            {
+              text: '🔧 AWMC API',
+              items: [
+                { text: 'AWMC Public API', link: '/en/dev/awmc-api' },
+                { text: 'Assets Static Resource API', link: '/en/dev/assets-api' }
+              ]
+            },
+            {
+              text: '🎵 Chart Preview',
+              items: [
+                { text: 'Chart Preview', link: '/en/dev/chart-preview' }
+              ]
+            }
+          ]
+        }
+      }
+    }
   },
 
   themeConfig: {

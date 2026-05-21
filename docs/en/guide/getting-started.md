@@ -1,11 +1,11 @@
-# AWMC TEAM Service
+# AWMC TEAM Services
 
-We provide many Open Services and APIs for you to call.
-For some APIs, you need to submit an application.
-You can contact our team by email via the icon above.
+We provide numerous open services and APIs for you to use.
+For some APIs, you need to apply for access.
+You can contact our team by sending an email via the icon above.
 
 ## AWMC BOT
 
-To getting started on AWMC BOT, Please go to:
-[AWMC BOT](/guide/bot/intro)
-More info needed for translation...
+To quickly set up the bot service, please visit:
+[AWMC BOT](./bot/intro.md)
+More content coming soon.

@@ -3,28 +3,28 @@
 layout: home
 
 hero:
-  name: "AWMC Bot & Services"
-  text: "The Ultimate AWMC Bot"
-  tagline: "Official Documentation, Features, and Guide"
+  name: "AWMC TEAM & Services"
+  text: "Building the Ultimate maimai Platform"
+  tagline: "Official Documentation, Features, and Usage Guide"
   image:
-    src: "https://upload.awmc.cc/i/2026/03/27/yvrty4.png"
+    src: "/images/dlx_normal.png"
     alt: AWMC Bot Logo
   actions:
     - theme: brand
       text: Get Started
       link: /en/guide/getting-started
     - theme: alt
-      text: Introduction
-      link: /en/guide/introduction
-
+      text: Use API
+      link: /en/dev/index
 features:
   - icon: 🛠️
     title: Powerful
-    details: Integrated tools for enhancing your gameplay.
+    details: Integrated with various practical tools to enhance your gameplay.
   - icon: ⚙️
     title: Easy to Use
-    details: Simple commands, intuitive interface.
+    details: Simple commands, intuitive interactions, quick to get started.
   - icon: 👥
-    title: Community
-    details: Active community and gifts.
+    title: Community Support
+    details: An active community and a generous group owner who gives out perks daily.
+
 ---
