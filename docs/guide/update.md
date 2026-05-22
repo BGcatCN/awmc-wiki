@@ -2,6 +2,13 @@
 
 ## 2026 年 5 月
 
+### 2026/05/22
+AWMC 版本号 `RELEASE-20260522 V26.5.12`
+<Badge type="tip" text="功能追加" />
+
+- 新增 `mai上传乐曲成绩` 功能
+- 新增 `mai获取收藏品` 功能
+
 ### 2026/05/20
 AWMC 版本号 `RELEASE-20260520 V26.5.10`
 <Badge type="warning" text="优化" />
