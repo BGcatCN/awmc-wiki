@@ -9,6 +9,15 @@ AWMC Version `BETA-20260522 V26.5.12`
 - Added `mai upload song score` feature
 - Added `mai get collectibles` feature
 
+### 2026/05/22-C2
+AWMC Version `BETA-20260522-C2 V26.5.13`
+<Badge type="danger" text="Bug Fix" />
+
+- For `itemKind=13` (Mai Mileage), input now requires quantity only; ID is no longer required
+- Mai Mileage quantity upper limit increased to `99999`
+- ID is now hidden in confirmation and success messages for Mai Mileage scenarios
+- `package.json` version bumped to `1.9.2`
+
 ### 2026/05/20
 AWMC Version `RELEASE-20260520 V26.5.10`
 <Badge type="warning" text="Optimization" />
