@@ -3,7 +3,7 @@
 ## May 2026
 
 ### 2026/05/22
-AWMC Version `RELEASE-20260522 V26.5.12`
+AWMC Version `BETA-20260522 V26.5.12`
 <Badge type="tip" text="New Feature" />
 
 - Added `mai upload song score` feature
