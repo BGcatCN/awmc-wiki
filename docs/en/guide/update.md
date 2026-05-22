@@ -10,17 +10,16 @@ AWMC Version `BETA-20260523`
 - Fixed ticket API
 
 ### 2026/05/22
+AWMC Version `BETA-20260522-C2 V26.5.13`
+<Badge type="danger" text="Bug Fix" />
+
+- Fixed bot issues
+
 AWMC Version `BETA-20260522 V26.5.12`
 <Badge type="tip" text="New Feature" />
 
 - Added `mai upload song score` feature
 - Added `mai get collectibles` feature
-
-### 2026/05/22-C2
-AWMC Version `BETA-20260522-C2 V26.5.13`
-<Badge type="danger" text="Bug Fix" />
-
-- Fixed bot issues
 
 ### 2026/05/20
 AWMC Version `RELEASE-20260520 V26.5.10`
