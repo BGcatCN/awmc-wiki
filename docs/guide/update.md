@@ -9,7 +9,18 @@ AWMC 版本号 `RELEASE-20260523 V26.5.13`
 - API 新增端点 `/v1/delete_score_manual`
 - Bot 新增删除成绩功能
 
-AWMC 版本号 `BETA-20260523`
+AWMC 版本号 `BETA-20260523 V26.5.14`
+<Badge type="tip" text="功能追加" />
+
+- 新增 PC (Play Count) 游玩次数统计功能
+  - `更新pc数` — 引导扫码拉取游玩次数数据
+  - `pc50` — B50 按游玩次数排序，卡片右下角显示 pc:xx
+  - `pca50` — 无视 B35/B15 分组的紧凑版 PC 排序
+  - `我的pc数` — 总游玩次数 + 最多的 15 首
+  - `pc数 <歌名/ID>` — 查询某首歌游玩次数
+  - `pc排行` — 群内用户按总游玩次数排名
+
+AWMC 版本号 `BETA-20260523 V26.5.13`
 <Badge type="danger" text="修复" />
 
 - 暂时关闭舞里程功能
