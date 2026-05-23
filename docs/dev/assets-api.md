@@ -6,7 +6,7 @@ AWMC 提供了一系列静态资源接口，方便开发者直接获取游戏相
 
 所有的静态资源均可以通过以下根地址访问：
 
-`https://assets.awmc.cc`
+`https://assets.awmc.team`
 
 
 ## 2. 资源分类
@@ -16,7 +16,7 @@ AWMC 提供了一系列静态资源接口，方便开发者直接获取游戏相
 获取指定 ID 的曲绘图片。
 
 <ApiDemo 
-  baseUrl="https://assets.awmc.cc"
+  baseUrl="https://assets.awmc.team"
   :isImage="true"
   :options="[
     {

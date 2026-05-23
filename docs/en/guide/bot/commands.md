@@ -12,7 +12,7 @@
 
 The plugin uses the following link by default in **cooldown prompts**, **unbind card guides**, and similar scenarios (configurable):
 
-- **Priority Authorization / General Store**: https://store.awmc.cc/
+- **Priority Authorization / General Store**: https://store.awmc.team/
 
 
 ### 2.2 What is "Priority Authorization"?
@@ -102,6 +102,33 @@ If historical data has no redeemer record, an admin can use **`/mai admin cancel
 |---------|-------------|
 | `/mai ticket [multiplier] [target]` | Issue function ticket (e.g., 2-6x, default 2). |
 | `/mai change version [QR code or target]` | Change game version number (supports caching). |
+| `/mai get collectibles [SGID or @user]` | Interactively get collectibles. |
+| `/mai upload song score [@user]` | Interactively upload a single song score. |
+| `/mai delete score [@user]` | Interactively delete a single song score. |
+
+#### `/mai get collectibles` Interactive Menu
+
+After sending the command, the Bot will prompt you to select a collectible type:
+
+| Number | Type |
+|--------|------|
+| 1 | Nameplate |
+| 2 | Title |
+| 3 | Avatar |
+| 4 | Gift |
+| 5 | Song |
+| 6 | Unlock Master |
+| 7 | Unlock Re:Master |
+| 8 | Unlock Black Chart (not yet implemented) |
+| 9 | Travel Partner |
+| 10 | Partner |
+| 11 | Background |
+| 12 | Function Ticket |
+| 13 | Intimacy Gift |
+
+Enter the corresponding number (1-13), or enter `00` to cancel.
+
+For song-related types, the Bot will further prompt for the Song ID.
 
 ### 5.5 Others
 
