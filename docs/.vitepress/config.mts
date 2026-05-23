@@ -186,7 +186,12 @@ export default defineConfig({
     ],
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2026-present AWMC'
+      copyright: `Copyright © 2026-present AWMC <br/>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" style="color:var(--vp-c-text-2);font-size:12px;">晋ICP备2025069504号-7</a>
+        <span style="margin:0 4px;font-size:12px;color:var(--vp-c-text-3);">|</span>
+        <img src="/images/gongan.png" alt="" style="width:14px;height:14px;vertical-align:middle;margin-right:2px;" />
+        <a href="https://beian.mps.gov.cn/#/query/webSearch?code=14070302000140" target="_blank" rel="noopener" style="color:var(--vp-c-text-2);font-size:12px;">晋公网安备14070302000140号</a>
+      `
     }
   }
 })
