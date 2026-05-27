@@ -3,6 +3,16 @@
 ## 2026 年 5 月
 
 ### 2026/05/27
+AWMC 版本号 `RELEASE-20260527 V26.5.18`
+<Badge type="tip" text="功能追加" />
+
+- 新增 `dx2026b35` — 支持查询新版本 PRiSM 的 B35 信息
+
+<Badge type="danger" text="修复" />
+
+- 修复定数异常
+- 修复宴会场被统计到 `dx2026b50` 中的问题
+
 AWMC 版本号 `BETA-20260527 V26.5.17`
 <Badge type="tip" text="功能追加" />
 
