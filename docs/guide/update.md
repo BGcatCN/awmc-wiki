@@ -3,6 +3,12 @@
 ## 2026 年 6 月
 
 ### 2026/06/01
+AWMC 版本号 `ALPHA-20260601 V26.6.0.65-66` [AWMC V2]
+<Badge type="danger" text="修复" />
+
+- 修复等级进度兼容未知同步类型（如 `fs=sync`），`_parse_level_plan` 同时支持 `combo_rank`/`sync_rank` 等内部值
+- `舞舞` 改为等价 `fdx`（FSD/FDX 及以上）
+
 AWMC 版本号 `ALPHA-20260601 V26.6.0.64` [AWMC V2]
 <Badge type="tip" text="功能追加" />
 
