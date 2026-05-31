@@ -3,6 +3,11 @@
 ## 2026 年 6 月
 
 ### 2026/06/01
+AWMC 版本号 `ALPHA-20260601 V26.6.0.62` [AWMC V2]
+<Badge type="warning" text="优化" />
+
+- 日报/周报/月报/存档对比统一视觉重写（B50 背景、毛玻璃面板、B50 提升布局修复、页脚栏）
+
 AWMC 版本号 `ALPHA-20260601 V26.6.0.61` [AWMC V2]
 <Badge type="danger" text="修复" />
 
