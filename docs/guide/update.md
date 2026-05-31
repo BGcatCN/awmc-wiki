@@ -2,6 +2,28 @@
 
 ## 2026 年 5 月
 
+### 2026/05/31
+AWMC 版本号 `ALPHA-20260531 V26.6.0.0-26.6.0.50` [AWMC V2]
+<Badge type="tip" text="功能追加" />
+
+- **主题系统支持** — 所有图片路径现在支持主题切换（`prism_plus`/`circle`），主题专属图片从主题子目录读取，共享图片从根目录读取
+- **舞/霸者完成表分页** — 舞和霸的完成表分为两页（13+ 及以上 / 13 及以下），生成 `舞-1.png` 和 `舞-2.png`，霸者共用舞的文件
+- **底力分析图表视觉优化** — 配色改为温暖夕阳色系，雷达图添加阴影/光晕/顶点高光，条形图添加阴影/高光/背景框，字号增大
+- **曲绘查找逻辑优化** — 支持四位数格式（`% 10000`）和 JPG 格式，提高封面查找成功率
+
+<Badge type="danger" text="修复" />
+
+- **版本更新后图片路径全部失效** — 旧路径直接从 `pic/` 根目录读取，新版本需要区分主题目录和根目录
+- **牌子/图标文件名更新** — `UI_Plate_300501` → `UI_Plate_550101`，`UI_Icon_309503` → `UI_Icon_509506`
+- **文件名连字符改为下划线** — `d-{num}` → `d_{num}`，`t-{num}` → `t_{num}`，`ra-dx` → `ra_dx`，`info-{cat}` → `info_{cat}`
+- **背景图片文件名修正** — `song_bg` → `chart_info`，`info_bg` → `play_info`，`unfinished_bg` → `unfinished_1`，`complete_bg` → `complete_1`，`unfinished_bg_2` → `unfinished_2`，`complete_bg_2` → `complete_2`，`rating_bg` → `complete`，`plate_num` → `plate_progress`
+- **minfo/info 渲染坐标错位** — 对照 beta 分支修正所有坐标：封面大小/位置、类型图标位置、BPM 位置、定数/notes/谱师/rating 布局全部重排
+- **舞/霸牌子查询 KeyError** — `version_map` 中舞和霸没有 `plate_to_dx_version` 的键，改用显式检查避免 KeyError
+- **完成表目录结构** — 从 `platedir/plate_{version}.png` 改为独立目录 `plate_table/{version}.png`，牌子图标素材从 `plate_version/{version}{plan}.png` 读取
+- **霸者查询路径** — 霸和舞共用 `舞-{page}.png` 完成表文件
+- **共享图片 vs 主题图片区分** — `UI_CMN_TabTitle_NewSong`、`{version}`、`{type}`、`d_{num}`、`fcfs`、`UI_CHR_PlayBonus_*`、`UI_GAM_Gauge_DXScoreIcon_*`、`UI_MSS_*` 等共享图片改用 `pic()` 从根目录读取；`logo`、`ra_dx`、`UI_TTR_Rank_*` 等主题图片继续用 `_rtp()` 从主题目录读取
+- **完成表渲染逻辑重写** — 对照 beta 分支重写：网格布局改为 `start_x=180, start_y=490, gap=96, row_count=12`，图标大小调整，统计信息位置调整，舞/霸使用 `plate_progress_wu.png`
+
 ### 2026/05/30
 AWMC 版本号 `ALPHA-20260530 V26.6.0` [AWMC V2]
 <Badge type="tip" text="功能追加" />
