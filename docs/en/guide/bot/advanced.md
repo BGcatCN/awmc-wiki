@@ -94,6 +94,22 @@ Use <kbd>Ctrl+F</kbd> to search for specific topics.
 | `我要上100分` etc. | Score-push recommendation charts (old/new charts) |
 | `更新定数表` / `更新完成表` | **Super admin**: Regenerate base images |
 
+### Chinese Shorthand Progress
+
+The original `level rating progress` pattern now supports Chinese plate shorthand:
+
+| Example | Equivalent to | Condition |
+|---------|---------------|-----------|
+| `13将` / `13将进度` | `13 sss进度` | Achievement ≥100% |
+| `14+极` | `14+ fc进度` | FC and above |
+| `13神` | `13 ap进度` | AP and above |
+| `13舞舞` | `13 fsd进度` | FSD and above |
+| `13者` | `13 bbb进度` | Achievement ≥80% |
+
+**Output**: Text summary (completed X/Y songs, unfinished/unplayed count) + completion table image.
+
+Also supports `13将 未完成`、`13将 2` for pagination filtering, and `13将 @someone` to query others.
+
 ## 5. Data Storage & Reports
 
 ::: warning Note
