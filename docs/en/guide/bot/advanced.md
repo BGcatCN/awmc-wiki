@@ -71,6 +71,16 @@ Use <kbd>Ctrl+F</kbd> to search for specific topics.
 | `ginfo` | Single song global stats + pie chart |
 | `分数线` | Calculate TAP/GREAT tolerance for a given achievement rate |
 
+### Floor
+
+| Command | Description |
+|---------|-------------|
+| `地板` | View overall B35/B15 rating floor |
+| `地板 14+` | View floor for 14+ charts in B50 |
+| `地板 紫13` / `地板 master` | Filter by difficulty level + constant |
+| `b50地板` / `rating地板` | Same as above (aliases) |
+| `地板 @someone` | Check someone else's floor |
+
 ## 4. Constant Tables / Completion Tables / Progress
 
 | Command | Description |
